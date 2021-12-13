@@ -2,6 +2,16 @@ import sys
 import time
 
 
+def delayinput(text, timeamount=0.08):
+    for c in text:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(timeamount)
+    sys.stdout.write("\n")
+    sys.stdout.flush()
+    output = input()
+    return output
+
 def prDelay(text, timeamount=0.08):
     for c in text:
         sys.stdout.write(c)
