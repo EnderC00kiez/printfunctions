@@ -7,10 +7,26 @@ def delayinput(text, timeamount=0.08):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(timeamount)
-    sys.stdout.write("\n")
-    sys.stdout.flush()
     output = input()
     return output
+
+def input_with_color(text, color):
+    if color == 'red':
+        output = input('\033[91m' + text + '\033[0m')
+    elif color == 'green':
+        output = input('\033[92m' + text + '\033[0m')
+    elif color == 'yellow':
+        output = input('\033[93m' + text + '\033[0m')
+    elif color == 'blue':
+        output = input('\033[94m' + text + '\033[0m')
+    elif color == 'magenta':
+        output = input('\033[95m' + text + '\033[0m')
+    elif color == 'cyan':
+        output = input('\033[96m' + text + '\033[0m')
+    elif color == 'white':
+        output = input('\033[97m' + text + '\033[0m')
+    elif color == 'black':
+        output = input('\033[90m' + text + '\033[0m')
 
 def prDelay(text, timeamount=0.08):
     for c in text:
