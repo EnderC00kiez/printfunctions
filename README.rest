@@ -1,0 +1,7 @@
+==============
+printfunctions
+==============
+
+A python library for easier and more customizable text handling.
+
+Includes printing with a delay in between diffrent characters, printing with color, and using input with a delay.
