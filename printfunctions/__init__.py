@@ -27,6 +27,7 @@ def input_with_color(text, color):
         output = input('\033[97m' + text + '\033[0m')
     elif color == 'black':
         output = input('\033[90m' + text + '\033[0m')
+    return output
 
 def prDelay(text, timeamount=0.08):
     for c in text:
